@@ -19,7 +19,7 @@ Trips.init(
     traveller_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'traveler',
+        model: 'traveller',
         key: 'id'
       }
     },
