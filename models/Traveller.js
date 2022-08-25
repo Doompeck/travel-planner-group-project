@@ -33,4 +33,4 @@ Traveler.init(
   }
 );
 
-module.exports = Traveler;
+module.exports = Traveller;
