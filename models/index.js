@@ -1,6 +1,6 @@
-const Driver = require('./Driver');
-const License = require('./License');
-const Car = require('./Car');
+const Driver = require('./Location');
+const License = require('./Trips');
+const Car = require('./Traveler');
 
 Driver.hasOne(License, {
   foreignKey: 'driver_id',
