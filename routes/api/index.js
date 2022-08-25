@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const driverRoutes = require('./driverRoutes');
+const driverRoutes = require('./travellerRoutes');
 
 router.use('/drivers', driverRoutes);
 
