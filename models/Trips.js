@@ -1,9 +1,9 @@
 const { UUIDV4, Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class License extends Model {}
+class Trips extends Model {}
 
-License.init(
+Trips.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -32,8 +32,8 @@ License.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'license',
+    modelName: 'Trips',
   }
 );
 
-module.exports = License;
+module.exports = Trips;
