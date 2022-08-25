@@ -29,7 +29,7 @@ Traveler.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Traveler',
+    modelName: 'traveler',
   }
 );
 
