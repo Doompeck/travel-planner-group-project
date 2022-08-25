@@ -29,8 +29,8 @@ Traveler.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'traveler',
+    modelName: 'traveller',
   }
 );
 
-module.exports = Traveler;
+module.exports = Traveller;
