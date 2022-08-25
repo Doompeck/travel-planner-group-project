@@ -9,15 +9,11 @@ Location.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
-    name: {
+    location_name: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    address: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
   },
   {
@@ -25,7 +21,7 @@ Location.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Location',
+    modelName: 'location',
   }
 );
 

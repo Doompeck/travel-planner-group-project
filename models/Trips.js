@@ -11,28 +11,32 @@ Trips.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    license_number: {
-      type: DataTypes.UUID,
-      defaultValue: UUIDV4,
+    traveller_amount: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 1
     },
-    is_donor: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
-    },
-    driver_id: {
+    traveller_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'driver',
-        key: 'id',
-      },
+        model: 'traveler',
+        key: 'id'
+      }
     },
+    location_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'location',
+        key: 'id'
+      }
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Trips',
+    modelName: 'trips',
   }
 );
 

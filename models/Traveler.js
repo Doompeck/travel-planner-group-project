@@ -11,32 +11,25 @@ Traveler.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    make: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    model: {
+    email: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    mileage: {
-      type: DataTypes.INTEGER,
-      defaultValue: 0,
-    },
-    driver_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'driver',
-        key: 'id',
-      },
-    },
+      unique: true,
+      validate: {
+        isEmail: true
+      }
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Traveler',
+    modelName: 'traveler',
   }
 );
 
